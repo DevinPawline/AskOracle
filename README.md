@@ -1,2 +1,3 @@
-# super-team-project
-I enjoy JavaScript because it utilizes both Functional programming and Object-oriented programming.
+# Ask Oracle Website 
+
+## Using this website you can look up character/movie information about your favorite superhero! 
