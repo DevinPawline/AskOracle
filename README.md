@@ -1,6 +1,6 @@
 # Ask Oracle
 
-## Using this website to search your favorite superhero! 
+### Use this website to search your favorite superhero! 
 
 ## Table of Contents:
 1. Find Your Hero
@@ -11,23 +11,23 @@
 6. Requirements
 7. Helpful Link
 
-### Find Your Hero
+## Find Your Hero
 [Deployed Link]()
 
-### Application Details:
+## Application Details:
 
-### Demo Video:
+## Demo Video:
 
-### API Information:
+## API Information:
 
-### User Story: 
+## User Story: 
 As a Marvel fan, 
 When I search the superhero of my choice, 
 I am presented with the bio of the superhero and the release date of one of their movies.
 
-### Requirements:
+## Requirements:
 
-### Helpful Links:
+## Helpful Links:
 
 
 
