@@ -20,11 +20,6 @@
 ## Demo Video:
 
 ## API Information:
-[SuperHero API](https://superheroapi.com/)
-About the Superhero API-
-
-[Comic Vine API](https://comicvine.gamespot.com/api/documentation#toc-0-15)
-About Comic Vine API-
 
 ## User Story: 
 As a Marvel fan, 
