@@ -1,10 +1,13 @@
 //creating js file to send to branch
-
+var movieName = "Batman"
+var characterID = "246"
 // Will fetch the API below here:
-fetch('https://comicvine.gamespot.com/api/documentation#toc-0-2/movies/name', {mode: "no-cors"})
-  .then(response => response.text())
+fetch(`https://omdbapi.com/?s=${movieName}&apikey=`)
+  .then(response =>response.json())
   .then(data => console.log(data));
-
-  fetch('https://superheroapi.com/api/10218611106695061/character-id/biography', {mode: "no-cors"})
-  .then(response => response.text())
-  .then(data => console.log(data));
+const url = `https://superheroproxy.herokuapp.com/api/10218611106695061/${characterID}/biography`;
+console.log(url)
+fetch(url)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err=>console.log(err))
