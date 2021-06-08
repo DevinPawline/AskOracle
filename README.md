@@ -20,6 +20,11 @@
 ## Demo Video:
 
 ## API Information:
+[OMDb API](https://omdbapi.com/?s=${movieName}&apikey=)
+About OMDB API- The OMDb API allows developers everywhere to obtain movie information about all movies.
+
+[Superhero API](https://superheroproxy.herokuapp.com/api/10218611106695061/${characterID}/biography)
+About Superhero API- The superhero API allows developers everywhere to access information about all superheros.
 
 ## User Story: 
 As a Marvel fan, 
