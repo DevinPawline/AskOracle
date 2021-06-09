@@ -32,8 +32,9 @@ body {
     color: white;
 }
 
-.content textarea {
+.content input {
     width: 350px;
+    height: 25px;
 }
 
 .content button {
@@ -50,4 +51,16 @@ body {
     background-color: #4CAF50;
     color: white;
     transition-duration: 0.4s;
+}
+
+button {
+    margin: 15px;
+}
+
+/*search page*/
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+
+.container {
+    margin: 50px;
 }
