@@ -1,3 +1,6 @@
+const inpSearch = document.getElementById('search');
+
+
 //creating js file to send to branch
 var movieName = "Batman"
 var characterID = "215"
