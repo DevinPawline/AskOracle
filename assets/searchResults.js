@@ -40,7 +40,7 @@ $("#search").autocomplete({source: function(request, response){
 
 })
 
-function handleSubmit()
-document.getElementById("myButton").onclick = function () {
-  location.href = "./NewSearchPage.html";
-};
+// function handleSubmit()
+// document.getElementById("myButton").onclick = function () {
+//   window.location = "NewSearchPage.html";
+// };
