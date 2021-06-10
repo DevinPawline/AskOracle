@@ -14,11 +14,18 @@
 ## Find Your Hero
 [Deployed Link]()
 
+[Github Repo Link]()
+
 ## Application Details:
 
 ## Demo Video:
 
 ## API Information:
+[OMDb API](https://omdbapi.com/?s=${movieName}&apikey=)
+About OMDB API- The OMDb API allows developers everywhere to obtain movie information about all
+
+[Superhero API](https://superheroproxy.herokuapp.com/api/10218611106695061/${characterID}/biography)
+About Superhero API- The superhero API allows developers everywhere to access information about all superheros.
 
 ## User Story: 
 As a Marvel fan, 
@@ -26,6 +33,18 @@ When I search the superhero of my choice,
 I am presented with the bio of the superhero and the release date of one of their movies.
 
 ## Requirements:
+* Application Requirements
+    
+    * Application uses at least two server-side APIs.
+
+    * Application uses client-side storage to store persistant data.
+    
+    * Application can not use JS alerts, prompts, or confirms (uses modals instead).
+    
+    * Application uses a CSS framework other than Bootstrap (Foundation, Materialized).
+    
+    * Application is interactive (accepts and responds to user input).
+
 
 ## Helpful Links:
 
