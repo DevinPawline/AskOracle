@@ -47,7 +47,8 @@ I am presented with the bio of the superhero and the release date of one of thei
 
 
 ## Helpful Links:
-
-
+[jQuery UI](https://code.jquery.com/ui/)
+[APIs](https://github.com/public-apis/public-apis#animals)
+[]()
 
 
