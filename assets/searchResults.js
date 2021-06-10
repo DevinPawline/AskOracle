@@ -11,15 +11,15 @@ function searchOMDB () {
   });
 }
 
-// function renderResults (results) {
-//   const list = document.getElementById("resultsList");
-//   list.innerHTML = "";
-//   results.forEach(result => {
-//     const element = document.createElement("li");
-//     element.innerText = result;
-//     list.appendChild(element);
-//   });
-// }
+function renderResults (results) {
+  const list = document.getElementById("resultsList");
+  list.innerHTML = "";
+  results.forEach(result => {
+    const element = document.createElement("li");
+    element.innerText = result;
+    list.appendChild(element);
+  });
+}
 
 
 // function searchSuperheroApi (characterID) {
