@@ -1,6 +1,13 @@
 // Fetch Api OMDB, using var declared above 
 // Api access key allows 1000 pulls per day
-var movieName = "Iron Man";
+var movieName = "Iron Man"
+
+$("#search").autocomplete({source: function(request, response){
+  response(["Iron Man", "Hulk", "Black Widow", "Thor"])
+}
+})
+
+searchOMDB();
 
 function searchOMDB () {
   const OMDB_url = `https://www.omdbapi.com/?apikey=682eb5a4&s=${movieName}`;
@@ -9,19 +16,21 @@ function searchOMDB () {
   .then((jsonData) => {
     console.log(jsonData);
     const results = jsonData.map(element => element.movie.name);
-    renderResults(results);
+    displayContent(results);
   });
 }
 
-function renderResults (results) {
-  const list = document.getElementById("content");
-  list.innerHTML = "";
-  results.forEach(result => {
-    const element = document.createElement("li");
-    element.innerText = result;
-    list.appendChild(element);
-  });
+function displayContent (results) {
+  var movieContainer = document.getElementById("card-content")
+  for (var i = 0; i < data.length; i++) {
+    var movieNames = getElementById("moviename");
+    movieNames.innerHTML = "Movies:" + data[i].Title;
+    movieContainer.appendChild(movieNames);
+    console.log(data);
+  }
 }
+
+
 
 
 // function searchSuperheroApi (characterID) {
@@ -34,13 +43,3 @@ function renderResults (results) {
 // }
 
 
-$("#search").autocomplete({source: function(request, response){
-  response(["Iron Man", "Hulk", "Black Widow"])
-}
-
-})
-
-// function handleSubmit()
-// document.getElementById("myButton").onclick = function () {
-//   window.location = "NewSearchPage.html";
-// };
