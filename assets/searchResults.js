@@ -35,7 +35,7 @@ function renderResults (results) {
 
 
 $("#search").autocomplete({source: function(request, response){
-  response(["Iron Man", "Hulk", "Black Widow"])
+  response(["Iron Man", "Hulk", "Black Widow", "Thor"])
 }
 
 })
