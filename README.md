@@ -17,6 +17,13 @@
 [Github Repo Link]()
 
 ## Application Details:
+* Homepage
+    * Search your favorite Marvel super hero
+
+* Character Page
+    * Picture will pull up
+    * List of movies the superhero was in and the dates they were released
+
 
 ## Demo Video:
 
@@ -48,6 +55,7 @@ I am presented with the bio of the superhero and the release date of one of thei
 
 ## Helpful Links:
 [jQuery UI](https://code.jquery.com/ui/)
+
 [APIs](https://github.com/public-apis/public-apis#animals)
 []()
 
