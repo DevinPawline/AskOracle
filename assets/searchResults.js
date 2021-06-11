@@ -39,8 +39,3 @@ $("#search").autocomplete({source: function(request, response){
 }
 
 })
-
-// function handleSubmit()
-// document.getElementById("myButton").onclick = function () {
-//   window.location = "NewSearchPage.html";
-// };
