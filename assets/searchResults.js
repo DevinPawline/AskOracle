@@ -9,25 +9,24 @@ $("#search").autocomplete({source: function(request, response){
 
 searchOMDB();
 
+
 function searchOMDB () {
   const OMDB_url = `https://www.omdbapi.com/?apikey=682eb5a4&s=${movieName}`;
   fetch(OMDB_url)
   .then (response => response.json())
   .then((jsonData) => {
     console.log(jsonData);
-    const results = jsonData.map(element => element.movie.name);
-    displayContent(results);
+    displayContent(jsonData);
   });
 }
 
 function displayContent (results) {
-  var movieContainer = document.getElementById("card-content")
-  for (var i = 0; i < data.length; i++) {
-    var movieNames = getElementById("moviename");
-    movieNames.innerHTML = "Movies:" + data[i].Title;
-    movieContainer.appendChild(movieNames);
-    console.log(data);
-  }
+console.log(results.Search);
+for(let i = 0; i < results.Search.length; i++){
+document.getElementById('moviename').innerHTML += '<li>'+
+  "<p>" + results.Search[i].Title + "</p>" + 
+  '</li>';
+}
 }
 
 
@@ -44,8 +43,10 @@ function displayContent (results) {
 
 
 
+
 function cards() {
   var cardDiv = document.createElement("div");
   //document.getElementById("movieposter").setAttribute("src", array[i]) //setting up posters to run through array
  console.log(cardDiv);
 }
+
