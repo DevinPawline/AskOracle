@@ -25,9 +25,9 @@
     
                 <section>
             
-                    <input type="text" id="search" placeholder="Search a Superhero">
+                    <input type="text" id="search" name="search" placeholder="Search a Superhero">
                     <div class="move">
-                    <button id="searchButton" onclick="window.open('NewSearchPage.html')">Search</button>
+                    <button id="searchButton" onclick="window.open('NewSearchPage.html?hero='+ document.querySelector('#search').value)">Search</button>
                     </div>  
                 </section>
             </div>
