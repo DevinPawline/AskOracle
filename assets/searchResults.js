@@ -1,56 +1,42 @@
 // Fetch Api OMDB, using var declared above 
 // Api access key allows 1000 pulls per day
-var movieName = "Iron Man" //04 web api activity 6 / 3rd party api's // server side 6 api script.js -> targeting input
-
+var inpSearch = document.querySelector('#search').value;
 
 $("#search").autocomplete({source: function(request, response){
   response(["Iron Man", "Hulk", "Black Widow", "Thor"])
 }
 })
 
+
 searchOMDB();
 
 
 function searchOMDB () {
-
-  var mySuoerHeroElemnts= 
-  const OMDB_url = `https://www.omdbapi.com/?apikey=682eb5a4&s=${movieName}`;
+  const OMDB_url = `https://www.omdbapi.com/?apikey=682eb5a4&s=${inpSearch}`;
   fetch(OMDB_url)
   .then (response => response.json())
-  .then((jsonData) => {
-    console.log(jsonData);
-    displayContent(jsonData,mySuoerHeroElemnts);
+  .then((OMDBdata) => {
+    console.log(OMDBdata);
+  // const proxy_url = `https://superheroproxy.herokuapp.com/api/10218611106695061/search/${inpSearch}`;
+  // fetch(proxy_url)
+  // .then (response => response.json())
+  // .then((SuperHeroData) => {
+  //   console.log(SuperHeroData);
+  displayContent(OMDBdata);
   });
-}
+};
 
 function displayContent (results) {
 console.log(results.Search);
 for(let i = 0; i < results.Search.length; i++){
-/* document.getElementById('moviename').innerHTML += '<li>'+
-  "<p>" + results.Search[i].Title + "</p>" + 
-  '</li>'; */
-  var movieposter = results.Search[i].Poster
-  //var moviename = results.Search[i].
-  cards(results.Search[i].Title, results.Search[i].Year, results.Search[i].Poster);
+    var movieposter = results.Search[i].Poster
+    var moviename = results.Search[i].Title
+    var release = results.Search[i].Year
+  cards(moviename, movieposter, release);
 }
 }
 
-
-
-
-// function searchSuperheroApi (characterID) {
-//   const proxy_url = `https://superheroproxy.herokuapp.com/api/10218611106695061/${characterID}/biography`;
-//   fetch(proxy_url)
-//   .then (response => response.json())
-//   .then((jsonData) => {
-//     console.log(jsonData); //change name
-//   });
-// }
-
-
-
-
-function cards(moviename, release, movieposter) {
+function cards(movieposter, moviename, release) {
   var cardDiv = document.createElement("div");
   cardDiv.classList.add("card");
   cardDiv.innerHTML=`
