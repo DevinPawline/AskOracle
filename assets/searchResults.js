@@ -1,6 +1,6 @@
 // Fetch Api OMDB, using var declared above 
 // Api access key allows 1000 pulls per day
-var movieName = "Iron Man" //04 web api activity 6 / 3rd party api's
+var movieName = "Iron Man" //04 web api activity 6 / 3rd party api's // server side 6 api script.js -> targeting input
 
 $("#search").autocomplete({source: function(request, response){
   response(["Iron Man", "Hulk", "Black Widow", "Thor"])
@@ -26,9 +26,9 @@ for(let i = 0; i < results.Search.length; i++){
 /* document.getElementById('moviename').innerHTML += '<li>'+
   "<p>" + results.Search[i].Title + "</p>" + 
   '</li>'; */
-  var movieposter = results.Search[i].
-  var moviename = results.Search[i].
-  cards(results.Search[i].Title, results.Search[i].Year);
+  var movieposter = results.Search[i].Poster
+  //var moviename = results.Search[i].
+  cards(results.Search[i].Title, results.Search[i].Year, results.Search[i].Poster);
 }
 }
 
@@ -47,13 +47,13 @@ for(let i = 0; i < results.Search.length; i++){
 
 
 
-function cards(moviename, release) {
+function cards(moviename, release, movieposter) {
   var cardDiv = document.createElement("div");
   cardDiv.classList.add("card");
   cardDiv.innerHTML=`
   <div class="card-image">
   <figure class="image is-4by3">
-    <img src="${0}" id="Pic" id="movieposter" alt="Placeholder image"> <!--Add movie poster here-->
+    <img src="${movieposter}" id="Pic" id="movieposter" alt="Placeholder image"> <!--Add movie poster here-->
   </figure>
 </div>
 <div class="card-content">
