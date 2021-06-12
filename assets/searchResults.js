@@ -40,3 +40,13 @@ document.getElementById('moviename').innerHTML += '<li>'+
 //     console.log(jsonData);
 //   });
 // }
+
+
+
+
+function cards() {
+  var cardDiv = document.createElement("div");
+  //document.getElementById("movieposter").setAttribute("src", array[i]) //setting up posters to run through array
+ console.log(cardDiv);
+}
+
