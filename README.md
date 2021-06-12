@@ -20,7 +20,7 @@
 
 ## Application Details:
 * Homepage
-    * Search your favorite Marvel super hero
+    * Search your favorite Superhero
 * Character Page
     * List of movies that superhero played in 
     * Picture of the movie poster 
@@ -36,7 +36,7 @@ About OMDB API- The OMDb API allows developers everywhere to obtain movie inform
 About Superhero API- The superhero API allows developers everywhere to access information about all superheros.
 
 ## User Story: 
-As a Marvel fan, 
+As a Superhero fan, 
 When I search the superhero of my choice, 
 I am presented with the bio of the superhero, the movies they are in with a movie poster and the release date of the movies.
 
