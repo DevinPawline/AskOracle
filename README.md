@@ -16,14 +16,15 @@
 
 [Github Repo Link]()
 
+[Pesentation]()
+
 ## Application Details:
 * Homepage
     * Search your favorite Marvel super hero
-
 * Character Page
-    * Picture will pull up
-    * List of movies the superhero was in and the dates they were released
-
+    * List of movies that superhero played in 
+    * Picture of the movie poster 
+    * Movie release date
 
 ## Demo Video:
 
@@ -37,7 +38,7 @@ About Superhero API- The superhero API allows developers everywhere to access in
 ## User Story: 
 As a Marvel fan, 
 When I search the superhero of my choice, 
-I am presented with the bio of the superhero and the release date of one of their movies.
+I am presented with the bio of the superhero, the movies they are in with a movie poster and the release date of the movies.
 
 ## Requirements:
 * Application Requirements
