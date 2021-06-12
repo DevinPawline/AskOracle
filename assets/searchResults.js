@@ -1,6 +1,6 @@
 // Fetch Api OMDB, using var declared above 
 // Api access key allows 1000 pulls per day
-var movieName = "Iron Man"
+var movieName = document.querySelector('#search').value
 
 $("#search").autocomplete({source: function(request, response){
   response(["Iron Man", "Hulk", "Black Widow", "Thor"])
