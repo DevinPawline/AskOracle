@@ -12,12 +12,14 @@ searchOMDB();
 
 
 function searchOMDB () {
+
+  var mySuoerHeroElemnts= 
   const OMDB_url = `https://www.omdbapi.com/?apikey=682eb5a4&s=${movieName}`;
   fetch(OMDB_url)
   .then (response => response.json())
   .then((jsonData) => {
     console.log(jsonData);
-    displayContent(jsonData);
+    displayContent(jsonData,mySuoerHeroElemnts);
   });
 }
 
