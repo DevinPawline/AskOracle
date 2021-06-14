@@ -2,7 +2,7 @@
 // Api access key allows 1000 pulls per day
 
 $("#search").autocomplete({source: function(request, response){
-  response(["Iron Man", "Hawkeye", "Black Widow", "Hulk", "Batman"])
+  response(["Aquaman","Batman","Black Widow","Hulk","Iron Man","Oracle","Superman","Wonder Woman"])
 }
 })
 
