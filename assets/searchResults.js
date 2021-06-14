@@ -46,7 +46,7 @@ function cards(moviename, movieposter,release, elements) {
   cardDiv.innerHTML=`
   <div class="card-image">
   <figure class="image is-4by3">
-    <img src="${movieposter}" id="Pic" id="movieposter" alt="Placeholder image"> <!--Add movie poster here-->
+    <img src="${movieposter}" id="Pic" id="movieposter" alt="movie poster"> <!--Add movie poster here-->
   </figure>
 </div>
 <div class="card-content">
@@ -55,7 +55,7 @@ function cards(moviename, movieposter,release, elements) {
       <p class="title is-4" id="moviename">${moviename}</p> <!--Movie name goes here-->
     </div>
   </div>
-  <div class="content">
+  <div class="content2">
   ${superheroELements, elements}
       <p id="release date">Release Date:${release}</p> <!--Release date here-->
   </div>
