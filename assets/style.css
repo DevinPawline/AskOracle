@@ -19,6 +19,7 @@ body {
 .content-area { /*moved items to the center of the page*/
     height:100%;
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
 }
@@ -38,7 +39,6 @@ body {
 }
 
 .content button {
-
     background-color: white;
     padding: 12px 28px;
     color: black;
@@ -101,12 +101,38 @@ html {
     color: #4CAF50;
 }
 
-#moviename {
-    font-family: Lucida;
-    font-size: 32px;
-    text-align: center;
+/* //center images, fix background image, fix title size */
+ 
+/*adding upcoming trailer with countdown timer*/
+
+.poster {
+    margin: 30px;
+    border: 3px solid rgba(255, 0, 43, 0.007);
+    width: 150px;
+    height: 200px;    
 }
 
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
 
+div span {
+    color: white ;
+}
 
-/* //center images, fix background image, fix title size */
+li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-style: italic;
+    font-family: Comic Sans;
+    color: red;
+    font-size: 32px;
+    opacity: 0;
+}
+
+li:hover{
+    opacity: 1;
+}
