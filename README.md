@@ -17,7 +17,7 @@
 
 [Github Repo Link](https://github.com/DevinPawline/ask-oracle)
 
-[Pesentation]()
+[Pesentation](https://docs.google.com/presentation/d/1ZJZp1gERW0rmALweE3Y37k3eQHJmwLQVa5N-SxaOfp8/edit?usp=sharing)
 
 
 ## Application Details:
