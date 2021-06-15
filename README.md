@@ -13,7 +13,7 @@
 
 
 ## Find Your Hero
-[Deployed Link](https://devinpawline.github.io/AskOracle/)
+[Deployed Link](https://devinpawline.github.io/Ask_Oracle/)
 
 [Github Repo Link](https://github.com/DevinPawline/ask-oracle)
 
