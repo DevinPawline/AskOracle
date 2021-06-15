@@ -100,3 +100,10 @@ html {
 #AOLogo {
     color: #4CAF50;
 }
+
+
+#moviename {
+    font-family: Lucida;
+    font-size: 32px;
+    text-align: center;
+}
